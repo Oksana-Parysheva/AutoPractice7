@@ -1,0 +1,4 @@
+Hello and Welcome
+It is the first content
+of the text file txtFile.txt
+This is the new line at last line.

@@ -1,0 +1,21 @@
+{
+    "universities": [
+        {
+            "university": "National Aerospace University",
+            "students": [
+                {
+                    "name": "Stephen Merphy"
+                },
+                {
+                    "name": "Austin Newton"
+                },
+                {
+                    "name": "Adam Sendler"
+                },
+                {
+                    "name": "Kortney Koks"
+                }
+            ]
+        }
+    ]
+}
