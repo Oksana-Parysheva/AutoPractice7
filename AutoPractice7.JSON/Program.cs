@@ -3,7 +3,9 @@ using AutoPractice7.JSON.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace AutoPractice7.JSON
 {
@@ -21,6 +23,10 @@ namespace AutoPractice7.JSON
 
             JObject o = JObject.Parse(jsonText);
             string universityName = o["universities"][0]["university"].Value<string>();
+            List<string> students = o["universities"][0]["students"].
+                            Children()["name"].
+                            Select(p => p.Value<string>()).
+                            ToList();
 
             Console.ReadLine();
         }
